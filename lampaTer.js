@@ -14,8 +14,7 @@ class Lampa{
         
         })
     }
-    
-    setAllapot(allapot){
+    setAllapot(){
         if (allapot==false){
             allapot=true
             this.allapot=allapot
@@ -27,11 +26,11 @@ class Lampa{
     }
     szinBeallit(){
         if (allapot==true){
-            this.divElem().style.backgroundcolor="blue";
+            this.divElem().style.backgroundColor="blue";
         }
         else
         if (allapot==false){
-            this.divElem().style.backgroundcolor="red";
+            this.divElem().style.backgroundColor="red";
         }
     }
     esemenyTrigger(){

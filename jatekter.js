@@ -18,6 +18,8 @@ class Jatekter{
             else{
                 event.detail.setElem(allapot=false)
             }
+            lepes++;
+            
         })
     }
 
