@@ -4,11 +4,11 @@ class Jatekter{
     constructor(){
         let db=0;
         let allapotlista={};
-        let meret=0;
+        let meret=9;
         let lepes=0;
         const articleELEM=$("article");
-        for (let index = 0; index < allapotlista ; index++) {
-            const lam=new Lampa(index,allapotlista[index],articleELEM)
+        for (let index = 0; index < meret ; index++) {
+            const lam=new Lampa(index+1,allapotlista[index],articleELEM)
         }
         $(window).on("elemKivalasztasa",(event)=>{
             console.log(event.detail)

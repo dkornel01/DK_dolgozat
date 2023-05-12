@@ -3,13 +3,15 @@ class Lampa{
         this.id=this.id;
         this.allapot=this.allapot;
         this.divElem=this.divElem;
-        divElem.append(`<div class="${id}"<p><p><div>>`)
+        divElem.append(`<div class="${id}"<p><p><div>`)
 
         this.elem=$('article div:last-child');
+        this.pelem=this.elem.children("p")
         this.elem.on("click",() =>{
             if(this.allapot){
                 this.esemenyTrigger();
             }
+        
         })
     }
     
